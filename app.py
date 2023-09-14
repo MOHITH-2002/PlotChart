@@ -7,6 +7,15 @@ import altair as alt
 import plotly.figure_factory as ff
 import plotly.express as px
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.image("logo.png", width=100)
 st.header("PlotChart:rainbow[.]")
 
