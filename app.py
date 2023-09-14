@@ -11,10 +11,12 @@ st.image("logo.png", width=100)
 st.header("PlotChart:rainbow[.]")
 
 file = st.file_uploader("pick a csv or Excel file", type=['csv','XLSX'])
+
 if file is not None:
+    st.success("File uploaded successfully",icon='😅')
     
     
-    st.toast("File uploaded successfully",icon='😅')
+    
     df=pd.read_csv(file)
     dfFilter = df.columns
 
